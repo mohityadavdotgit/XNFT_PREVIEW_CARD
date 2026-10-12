@@ -1,4 +1,4 @@
-/* --- CSS Reset & Variables --- */
+/* --- Global Reset & Design Palette --- */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ body {
   padding: 24px;
 }
 
-/* --- .card Architecture --- */
+/* --- .card Container Styling --- */
 .card {
   background-color: var(--bg-card);
   width: 100%;
@@ -36,7 +36,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Image Overlays & Hover System --- */
+/* --- Image Containers & Hover Overlay --- */
 .card__images {
   position: relative;
   width: 100%;
@@ -71,9 +71,12 @@ body {
   opacity: 1;
 }
 
-/* --- Typography Typography Elements --- */
+/* --- Core Typography Title Wrapper System --- */
 .card__title {
   margin-top: 24px;
+}
+
+.card__title h1 {
   font-size: 22px;
   font-weight: 600;
 }
@@ -95,7 +98,7 @@ body {
   line-height: 1.5;
 }
 
-/* --- Flexbox Stats Grid Layout --- */
+/* --- Flexbox Stats & Alignment Row --- */
 .card__time {
   display: flex;
   justify-content: space-between;
@@ -127,7 +130,7 @@ body {
   margin-top: 20px;
 }
 
-/* --- Creator Details --- */
+/* --- Creator Frame Layout --- */
 .card__creator {
   display: flex;
   align-items: center;
@@ -153,7 +156,7 @@ body {
   color: var(--color-cyan);
 }
 
-/* --- Footer Attribution styling --- */
+/* --- Global Footer Attribution --- */
 .attribution {
   margin-top: 32px;
   font-size: 11px;
