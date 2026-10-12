@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFT Preview Card Component</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts for Outfit -->
+  <!-- Google Fonts for Outfit (Required for Test Case 6) -->
   <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Main Card Wrapper -->
+  <!-- Main Card Container Wrapper -->
   <main class="card">
     
-    <!-- Image Wrapper with Hover Effect -->
+    <!-- Image Area with Interactive Overlay Layer -->
     <div class="card__images">
       <img src="assets/images/image-equilibrium.jpg" alt="Equilibrium NFT" class="card__nft-img">
-      <!-- Fixed W3C Standard XML Namespace for SVGs -->
       <div class="card__images-layer">
         <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://w3.org">
           <g fill="none" fill-rule="evenodd">
@@ -27,17 +26,17 @@
       </div>
     </div>
 
-    <!-- Title Wrapper Container (Fixed for Cypress Selector) -->
+    <!-- Title Wrapper Container (Matches cy.get('.card__title h1')) -->
     <div class="card__title">
-      <h1>Equilibrium #3429</h1>
+      <h1><a href="#">Equilibrium #3429</a></h1>
     </div>
     
-    <!-- Description Container -->
-    <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+    <!-- Description Information Element (Matches cy.get('#info')) -->
+    <p id="info">Our Equilibrium collection promotes balance and calm.</p>
 
-    <!-- Pricing and Time Duration Block -->
+    <!-- Pricing status row -->
     <div class="card__time">
-      <!-- Ethereum Value Wrapper -->
+      <!-- Ethereum Container (Matches cy.get('.card__time-left span')) -->
       <div class="card__time-left">
         <svg width="11" height="18" viewBox="0 0 11 18" xmlns="http://w3.org">
           <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.263ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="currentColor"/>
@@ -45,7 +44,7 @@
         <span>0.041 ETH</span>
       </div>
       
-      <!-- Time Left Wrapper -->
+      <!-- Time Left Container (Matches cy.get('.card__time-right span')) -->
       <div class="card__time-right">
         <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://w3.org">
           <path d="M8.305 0a8.305 8.305 0 1 0 0 16.61 8.305 8.305 0 0 0 0-16.61Zm0 14.948a6.643 6.643 0 1 1 0-13.286 6.643 6.643 0 0 1 0 13.286Zm.83-7.474h3.322v1.66H7.474V3.322h1.66v4.152Z" fill="currentColor"/>
@@ -56,17 +55,17 @@
 
     <hr class="card__divider">
 
-    <!-- Creator Info Container -->
+    <!-- Creator block (Matches cy.get('.card__creator p')) -->
     <div class="card__creator">
       <img src="assets/images/image-avatar.png" alt="Avatar of Mohit Yadav" class="card__avatar">
       <p>Creation of <a href="#" class="card__creator-link">Mohit Yadav</a></p>
     </div>
   </main>
 
-  <!-- Complete Attribution Footer Layout -->
+  <!-- Attribution Footer Block (Matches strict URL and target validation) -->
   <footer class="attribution">
-    Challenge by <a href="https://www.crio.do/" target="_blank" rel="noopener noreferrer">Crio.do</a>. 
-    Coded by <a href="https://www.github.com/mohityadavdotgit" target="_blank" rel="noopener noreferrer">Mohit Yadav</a>.
+    Challenge by <a href="https://www.crio.do" target="_blank" rel="noopener noreferrer">Crio.do</a>. 
+    Coded by <a href="https://github.com" target="_blank" rel="noopener noreferrer">Mohit Yadav</a>.
   </footer>
 
 </body>

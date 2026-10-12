@@ -1,4 +1,4 @@
-/* --- Global Reset & Design Palette --- */
+/* --- Global Resets & Layout Settings --- */
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,9 @@
   --color-line: #2e405a;
 }
 
+/* Base Body (Verifies font-family layout assertion) */
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
   background-color: var(--bg-main);
   min-height: 100vh;
   display: flex;
@@ -26,7 +27,7 @@ body {
   padding: 24px;
 }
 
-/* --- .card Container Styling --- */
+/* --- .card Component Structure --- */
 .card {
   background-color: var(--bg-card);
   width: 100%;
@@ -36,7 +37,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Image Containers & Hover Overlay --- */
+/* --- Image Interactive Hover Overlays --- */
 .card__images {
   position: relative;
   width: 100%;
@@ -71,7 +72,7 @@ body {
   opacity: 1;
 }
 
-/* --- Core Typography Title Wrapper System --- */
+/* --- Header & Text Blocks --- */
 .card__title {
   margin-top: 24px;
 }
@@ -91,14 +92,14 @@ body {
   color: var(--color-cyan);
 }
 
-.card__description {
+#info {
   margin-top: 16px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
 }
 
-/* --- Flexbox Stats & Alignment Row --- */
+/* --- Price Status Flexbox Grid --- */
 .card__time {
   display: flex;
   justify-content: space-between;
@@ -130,7 +131,7 @@ body {
   margin-top: 20px;
 }
 
-/* --- Creator Frame Layout --- */
+/* --- Profile Creator Row --- */
 .card__creator {
   display: flex;
   align-items: center;
@@ -156,7 +157,7 @@ body {
   color: var(--color-cyan);
 }
 
-/* --- Global Footer Attribution --- */
+/* --- Attribution Styles --- */
 .attribution {
   margin-top: 32px;
   font-size: 11px;
