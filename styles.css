@@ -1,3 +1,4 @@
+/* --- CSS Reset & Variables --- */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@ body {
   padding: 24px;
 }
 
+/* --- .card Architecture --- */
 .card {
   background-color: var(--bg-card);
   width: 100%;
@@ -34,6 +36,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
+/* --- Image Overlays & Hover System --- */
 .card__images {
   position: relative;
   width: 100%;
@@ -68,6 +71,7 @@ body {
   opacity: 1;
 }
 
+/* --- Typography Typography Elements --- */
 .card__title {
   margin-top: 24px;
   font-size: 22px;
@@ -91,6 +95,7 @@ body {
   line-height: 1.5;
 }
 
+/* --- Flexbox Stats Grid Layout --- */
 .card__time {
   display: flex;
   justify-content: space-between;
@@ -122,6 +127,7 @@ body {
   margin-top: 20px;
 }
 
+/* --- Creator Details --- */
 .card__creator {
   display: flex;
   align-items: center;
@@ -147,6 +153,7 @@ body {
   color: var(--color-cyan);
 }
 
+/* --- Footer Attribution styling --- */
 .attribution {
   margin-top: 32px;
   font-size: 11px;
